@@ -98,7 +98,7 @@ module Spaceship
         }
 
         payload = {
-          # Reduce the issued-at-time in case our time is slighly ahead of Apple's servers, which causes the token to be rejected.
+          # Reduce the issued-at-time in case our time is slightly ahead of Apple's servers, which causes the token to be rejected.
           iat: now.to_i - 60,
           exp: @expiration.to_i,
           aud: 'appstoreconnect-v1'

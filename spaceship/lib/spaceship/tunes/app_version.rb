@@ -59,7 +59,7 @@ module Spaceship
       attr_accessor :release_on_approval
 
       # @return (Fixnum) Milliseconds for releasing in GMT (e.g. 1480435200000 = Tue, 29 Nov 2016 16:00:00 GMT).
-      #   Use nil to unset. Setting this will supercede the release_on_approval field, so this field must be nil
+      #   Use nil to unset. Setting this will supersede the release_on_approval field, so this field must be nil
       #   for release_on_approval to be used.
       attr_accessor :auto_release_date
 
